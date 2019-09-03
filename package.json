@@ -1,7 +1,9 @@
 {
   "name": "case-study-microfrontends",
   "private": true,
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "version": "1.0.0",
   "main": "index.js",
   "author": "Guilherme Mangabeira Gregio <guilherme@3gweb.com.br>",
@@ -9,6 +11,7 @@
   "scripts": {
     "release": "cross-env HUSKY_BYPASS=true lerna publish",
     "build": "lerna run --parallel build",
+	"postbuild": "sh build.sh", 
     "build:root": "lerna run --scope=my-loan build",
     "build:header": "lerna run --scope=header build"
   },
@@ -26,6 +29,8 @@
     }
   },
   "commitlint": {
-    "extends": ["@commitlint/config-conventional"]
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }
