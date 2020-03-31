@@ -15,7 +15,7 @@
     "@emotion/core": "^10.0.14",
     "@emotion/styled": "^10.0.14",
     "lead-form": "git+https://github.com/valtermartins1301/react-form-lib-test.git",
-    "next": "^9.0.2",
+    "next": "^9.3.2",
     "next-compose-plugins": "^2.2.0",
     "next-images": "^1.1.2",
     "next-transpile-modules": "^2.3.1",
